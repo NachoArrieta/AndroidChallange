@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidChallange</string>
+
+    <string name="series_list_search">Buscá tu serie favorita</string>
+    <string name="series_detail_episodes">Episodios</string>
+    <string name="item_serie_no_image">Error al cargar la imagen</string>
+
+</resources>

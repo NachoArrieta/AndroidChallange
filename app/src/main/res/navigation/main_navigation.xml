@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/seriesListFragment">
+
+    <fragment
+        android:id="@+id/seriesListFragment"
+        android:name="com.nacho.androidchallange.presentation.ui.fragment.SeriesListFragment"
+        android:label="fragment_series_list"
+        tools:layout="@layout/fragment_series_list" >
+
+        <action
+            android:id="@+id/action_seriesListFragment_to_seriesDetailFragment"
+            app:destination="@id/seriesDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/seriesDetailFragment"
+        android:name="com.nacho.androidchallange.presentation.ui.fragment.SeriesDetailFragment"
+        android:label="fragment_series_detail"
+        tools:layout="@layout/fragment_series_detail">
+
+        <argument
+            android:name="serieId"
+            app:argType="integer" />
+
+        <argument
+            android:name="serieName"
+            app:argType="string" />
+
+        <argument
+            android:name="serieSummary"
+            app:argType="string" />
+
+        <argument
+            android:name="serieImage"
+            app:argType="string" />
+
+    </fragment>
+
+</navigation>
